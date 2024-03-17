@@ -25,3 +25,29 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+physiotherapy-website/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── header/
+│   │   │   ├── footer/
+│   │   │   ├── home/
+│   │   │   ├── services/
+│   │   │   ├── about/
+│   │   │   ├── contact/
+│   │   ├── services/
+│   │   │   ├── service.service.ts
+│   │   ├── models/
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.css
+│   │   └── app.module.ts
+│   ├── assets/
+│   ├── index.html
+│   └── styles.css
+├── angular.json
+├── package.json
+└── tsconfig.json
