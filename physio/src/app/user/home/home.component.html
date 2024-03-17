@@ -2,7 +2,7 @@
     <div id="home" class="landing-wrapper overflow-hidden">
         <div class="py-4 px-4 mx-0 md:mx-6 lg:mx-8 lg:px-8 flex align-items-center justify-content-between relative lg:static mb-3">
             <a class="flex align-items-center" href="#">
-                <img src="assets/layout/images/.svg" alt="Sakai Logo" height="50" class="mr-0 lg:mr-2"><span class="text-900 font-medium text-2xl line-height-3 mr-8">SAKAI</span>
+                <img src="assets/layout/images/{{layoutService.config().colorScheme === 'light' ? 'logo-dark' : 'logo-white'}}.svg" alt="Sakai Logo" height="50" class="mr-0 lg:mr-2"><span class="text-900 font-medium text-2xl line-height-3 mr-8">SAKAI</span>
             </a>
             <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" leaveToClass="hidden" >
                 <i class="pi pi-bars text-4xl"></i>
@@ -227,7 +227,7 @@
                             <span class="text-600">per month</span>
                             <button pButton pRipple label="Get Started" class="block mx-auto mt-4 p-button-rounded border-none ml-3 font-light line-height-2 bg-blue-500 text-white"></button>
                         </div>
-                        <!-- <p-divider class="w-full bg-surface-200"></p-divider> -->
+                        <p-divider class="w-full bg-surface-200"></p-divider>
                         <ul class="my-5 list-none p-0 flex text-900 flex-column">
                             <li class="py-2">
                                 <i class="pi pi-fw pi-check text-xl text-cyan-500 mr-2"></i>
@@ -258,7 +258,7 @@
                             <span class="text-600">per month</span>
                             <button pButton pRipple label="Try Free" class="block mx-auto mt-4 p-button-rounded border-none ml-3 font-light line-height-2 bg-blue-500 text-white"></button>
                         </div>
-                        <!-- <p-divider class="w-full bg-surface-200"></p-divider> -->
+                        <p-divider class="w-full bg-surface-200"></p-divider>
                         <ul class="my-5 list-none p-0 flex text-900 flex-column">
                             <li class="py-2">
                                 <i class="pi pi-fw pi-check text-xl text-cyan-500 mr-2"></i>
@@ -289,7 +289,7 @@
                             <span class="text-600">per month</span>
                             <button pButton pRipple label="Get a Quote" class="block mx-auto mt-4 p-button-rounded border-none ml-3 font-light line-height-2 bg-blue-500 text-white"></button>
                         </div>
-                        <!-- <p-divider class="w-full bg-surface-200"></p-divider> -->
+                        <p-divider class="w-full bg-surface-200"></p-divider>
                         <ul class="my-5 list-none p-0 flex text-900 flex-column">
                             <li class="py-2">
                                 <i class="pi pi-fw pi-check text-xl text-cyan-500 mr-2"></i>
@@ -317,7 +317,7 @@
             <div class="grid justify-content-between">
                 <div class="col-12 md:col-2" style="margin-top:-1.5rem;">
                     <a (click)="router.navigate(['/pages/landing'], {fragment: 'home'})" class="flex flex-wrap align-items-center justify-content-center md:justify-content-start md:mb-0 mb-3 cursor-pointer">
-                        <img src="assets/layout/images/.svg" alt="footer sections" width="50" height="50" class="mr-2">
+                        <img src="assets/layout/images/{{layoutService.config().colorScheme === 'light' ? 'logo-dark' : 'logo-white'}}.svg" alt="footer sections" width="50" height="50" class="mr-2">
                         <h4 class="font-medium text-3xl text-900">SAKAI</h4>
                     </a>
                 </div>

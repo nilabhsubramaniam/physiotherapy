@@ -1,7 +1,10 @@
 import { Routes } from '@angular/router';
+import { LayoutComponent} from './layout/layout.component'
+import { LandingPageComponent } from './layout/landing-page/landing-page.component';
+
 export const routes: Routes = [
     {
         path:'',
-        loadChildren: () => import ('./user/home/home.module').then(m => m.HomeModule)
+        component:LandingPageComponent
     }
 ];
