@@ -30,7 +30,7 @@ header {
 
 .nav-item {
   position: relative;
-  color: #013281;
+  color: #fff;
   font-size: 1rem;
   font-weight: 500;
   line-height: 25px;
@@ -41,25 +41,24 @@ header {
 }
 
 .nav-item:hover {
-  color:rgba(226,142,98,255);
+  color: rgb(168, 239, 255, 0.9);
 }
 
 .nav-item::after {
-    content: "";
-    position: absolute;
-    bottom: -0.3rem;
-    left: 50%;
-    width: 0; /* This may cause the dashed line not to appear initially */
-    height: 0.15rem;
-    transform: translateX(-50%);
-    background-color:rgba(226,142,98,255);
-    transition: all 0.5s ease;
-  }
-  
-  .nav-item:hover::after {
-    width: 100%; /* This expands the dashed line when hovered */
-  }
-  
+  content: "";
+  position: absolute;
+  bottom: -0.3rem;
+  left: 50%;
+  width: 0;
+  height: 0.15rem;
+  transform: translateX(-50%);
+  background-color: rgb(168, 239, 255, 0.9);
+  transition: all 0.5s ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
 
 .icons {
   position: absolute;
@@ -153,19 +152,7 @@ header {
   z-index: -1;
 }
 
-@media (min-aspect-ratio: 16/9) {
-  .background-video {
-    width: 100%;
-    height: auto;
-  }
-}
 
-@media (max-aspect-ratio: 4/3) {
-  .background-video {
-    width: auto;
-    height: 100%;
-  }
-}
 
 @media (max-width: 900px) {
   header {
@@ -175,6 +162,7 @@ header {
   .content h1 {
     font-size: 7rem;
   }
+  
 }
 
 @media (max-width: 700px) {
@@ -189,6 +177,7 @@ header {
     backdrop-filter: blur(50px);
     z-index: -1;
   }
+  
 
   .icons {
     display: inline-flex;
