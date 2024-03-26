@@ -1,17 +1,27 @@
-
-
- 
-  
-  html {
+html {
     scroll-behavior: smooth;
-  }
+}
 
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
- 
-.parallax{
-    background: url('../../assets/layout/images/pexels-cottonbro-studio-3957987.jpg') repeat fixed 100%;
+.parallax::before {
+    content: '';
+    background: url('../../assets/layout/images/landing-page-1.png') no-repeat fixed 100%;
     background-size: cover;
     color: aliceblue;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
 }
 .parallax-1{
     background: url('../../assets/layout/images/pexels-yan-krukau-5794048.jpg') repeat fixed 100%;
@@ -30,50 +40,76 @@
 
 
 /*text on image */
-
+.Index-page-content {
+    position: relative;
+    padding-top: 27px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+}
 
 
 .image-text {
-    position: absolute;
-    top: 30%;
-    right: 20%;
-    transform: translate(-50%, -50%);
+    text-align: right;
+    white-space: pre-wrap;
     color: #e96928;
-    font-size: 50px;
-    font-weight: 300;
-    text-align: justify;
-    text-shadow: 2px 2px 4px rgba(1,50,129,255);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.sqs-html-content {
+    word-wrap: break-word;
 }
 
 .therapy-list {
-    position: absolute;
-    top: 50%;
-    left: 50%; /* Adjust left position as needed */
-    transform: translateY(-50%);
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    font-size: 30px;
+    text-align: center;
+    white-space: pre-wrap;
     color: #e96928;
-    text-shadow: 2px 2px 4px rgba(1,50,129,255);
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .therapy-list li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 30px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .therapy-details {
-    position: absolute;
-    top: 55%;
-    left: 67%; /* Adjust left position as needed */
-    transform: translateX(-50%);
+    text-align: center;
+    white-space: pre-wrap;
     color: #e96928;
-    font-size: 18px;
-    text-shadow: 2px 2px 4px rgba(1,50,129,255);
+    font-size: 30px;
 }
 
+.schedule-btn {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .btn {
+        background-color: #013281;
+        border: 1px solid transparent;
+        border-radius: 25px;
+        padding: 1rem 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        text-align: center;
+        cursor: pointer;
 
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
 
 @media screen and (max-width: 768px) {
     .image-text {
@@ -86,6 +122,9 @@
 
     .therapy-details {
         font-size: 16px;
+    }
+    .parallax::before {
+        background-position-x: 55%;
     }
 }
 
@@ -102,9 +141,3 @@
         font-size: 14px;
     }
 }
-
-
-
-
-
-
