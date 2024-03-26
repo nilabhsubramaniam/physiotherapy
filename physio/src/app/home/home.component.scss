@@ -83,6 +83,10 @@ html {
         margin-right: 0;
     }
 }
+.fnt-size{
+    font-size: 14px;
+    text-align: justify;
+}
 
 .therapy-details {
     text-align: center;
@@ -111,6 +115,39 @@ html {
     }
 }
 
+.list-unstyled .icon-physical:before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Width of the icon */
+    height: 20px; /* Height of the icon */
+    background-image: url('../../assets/layout/images/physical-therapy.png'); /* URL of the physical therapy icon */
+    background-size: contain; /* Ensure the icon fits within the specified dimensions */
+    background-repeat: no-repeat; /* Prevent the icon from repeating */
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+.list-unstyled .icon-occupational:before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Width of the icon */
+    height: 20px; /* Height of the icon */
+    background-image: url('../../assets/layout/images/examination.png'); /* URL of the occupational therapy icon */
+    background-size: contain; /* Ensure the icon fits within the specified dimensions */
+    background-repeat: no-repeat; /* Prevent the icon from repeating */
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+.list-unstyled .icon-speech:before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Width of the icon */
+    height: 20px; /* Height of the icon */
+    background-image: url('../../assets/layout/images/physical.png'); /* URL of the speech therapy icon */
+    background-size: contain; /* Ensure the icon fits within the specified dimensions */
+    background-repeat: no-repeat; /* Prevent the icon from repeating */
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
 @media screen and (max-width: 768px) {
     .image-text {
         font-size: 20px;
@@ -126,6 +163,12 @@ html {
     .parallax::before {
         background-position-x: 55%;
     }
+    .list-unstyled .icon-physical:before,
+    .list-unstyled .icon-occupational:before,
+    .list-unstyled .icon-speech:before {
+        width: 15px; /* Adjust width for smaller screens */
+        height: 15px; /* Adjust height for smaller screens */
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -139,5 +182,11 @@ html {
 
     .therapy-details {
         font-size: 14px;
+    }
+    .list-unstyled .icon-physical:before,
+    .list-unstyled .icon-occupational:before,
+    .list-unstyled .icon-speech:before {
+        width: 10px; /* Further adjust width for even smaller screens */
+        height: 10px; /* Further adjust height for even smaller screens */
     }
 }

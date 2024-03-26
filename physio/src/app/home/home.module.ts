@@ -5,9 +5,10 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { TestimonialComponent } from './testimonial/testimonial.component'
 import { FooterComponent } from './footer/footer.component';
+import {AboutComponent } from './about/about.component'
 
 @NgModule({
-  declarations: [NavbarComponent, HomeComponent, FooterComponent, TestimonialComponent],
+  declarations: [NavbarComponent, HomeComponent, FooterComponent, TestimonialComponent, AboutComponent],
   imports: [
     CommonModule,
     HomeRoutingModule
