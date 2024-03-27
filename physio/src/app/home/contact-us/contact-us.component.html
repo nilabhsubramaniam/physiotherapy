@@ -1,0 +1,33 @@
+<div class="nav-bar">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="form-main">
+    <div class="main-wrapper">
+      <h2 class="form-head">Contact From</h2>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form-wrapper">
+        <div class="form-card">
+          <input class="form-input" type="text" formControlName="full_name" required />
+          <label class="form-label" for="full_name">Full Name</label>
+        </div>
+  
+        <div class="form-card">
+          <input class="form-input" type="email" formControlName="email" required />
+          <label class="form-label" for="email">Email</label>
+        </div>
+  
+        <div class="form-card">
+          <input class="form-input" type="number" formControlName="phone_number" required />
+          <label class="form-label" for="phone_number">Phone number</label>
+        </div>
+  
+        <div class="form-card">
+          <textarea class="form-textarea" maxlength="420" rows="3" formControlName="address" required></textarea>
+          <label class="form-textarea-label" for="address">Address</label>
+        </div>
+        <div class="btn-wrap">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
