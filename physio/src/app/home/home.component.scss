@@ -6,9 +6,6 @@ html {
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .parallax::before {
@@ -34,7 +31,7 @@ html {
     color: aliceblue;
 }
 .parallax-inner{
-    padding-top: 20%;
+    padding-top: 10%;
     padding-bottom: 20%;
 }
 
@@ -43,7 +40,7 @@ html {
 .Index-page-content {
     position: relative;
     padding-top: 27px;
-    width: 100%;
+    width: 85%;
     margin-right: auto;
     margin-left: auto;
     padding-left: 17px;
@@ -54,22 +51,16 @@ html {
 .image-text {
     text-align: right;
     white-space: pre-wrap;
-    color: #e96928;
-    font-size: 60px;
-    font-weight: bold;
-}
-
-.sqs-html-content {
-    word-wrap: break-word;
+    color: #426076;
+    font-size: 35px;
 }
 
 .therapy-list {
-    text-align: center;
+    text-align: right;
     white-space: pre-wrap;
-    color: #e96928;
-    font-size: 30px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    color: #426076;
+    font-size: 24px;
+    padding: 2rem 0;
 }
 
 .therapy-list li {
@@ -83,16 +74,18 @@ html {
         margin-right: 0;
     }
 }
-.fnt-size{
+
+.fnt-size {
     font-size: 14px;
-    text-align: justify;
+    text-align: left;
 }
 
 .therapy-details {
     text-align: center;
     white-space: pre-wrap;
-    color: #e96928;
-    font-size: 30px;
+    color: #426076;
+    font-size: 18px;
+    padding: 1rem 0;
 }
 
 .schedule-btn {
@@ -115,39 +108,6 @@ html {
     }
 }
 
-.list-unstyled .icon-physical:before {
-    content: "";
-    display: inline-block;
-    width: 20px; /* Width of the icon */
-    height: 20px; /* Height of the icon */
-    background-image: url('../../assets/layout/images/physical-therapy.png'); /* URL of the physical therapy icon */
-    background-size: contain; /* Ensure the icon fits within the specified dimensions */
-    background-repeat: no-repeat; /* Prevent the icon from repeating */
-    margin-right: 5px; /* Adjust spacing between icon and text */
-}
-
-.list-unstyled .icon-occupational:before {
-    content: "";
-    display: inline-block;
-    width: 20px; /* Width of the icon */
-    height: 20px; /* Height of the icon */
-    background-image: url('../../assets/layout/images/examination.png'); /* URL of the occupational therapy icon */
-    background-size: contain; /* Ensure the icon fits within the specified dimensions */
-    background-repeat: no-repeat; /* Prevent the icon from repeating */
-    margin-right: 5px; /* Adjust spacing between icon and text */
-}
-
-.list-unstyled .icon-speech:before {
-    content: "";
-    display: inline-block;
-    width: 20px; /* Width of the icon */
-    height: 20px; /* Height of the icon */
-    background-image: url('../../assets/layout/images/physical.png'); /* URL of the speech therapy icon */
-    background-size: contain; /* Ensure the icon fits within the specified dimensions */
-    background-repeat: no-repeat; /* Prevent the icon from repeating */
-    margin-right: 5px; /* Adjust spacing between icon and text */
-}
-
 @media screen and (max-width: 768px) {
     .image-text {
         font-size: 20px;
@@ -155,6 +115,10 @@ html {
 
     .therapy-list li {
         margin: 0 5px;
+    }
+
+    .fnt-size {
+        font-size: 12px;
     }
 
     .therapy-details {
@@ -173,15 +137,20 @@ html {
 
 @media screen and (max-width: 576px) {
     .image-text {
-        font-size: 18px;
+        font-size: 30px;
+    }
+
+    .parallax-inner{
+        padding-top: 60%;
     }
 
     .therapy-list li {
         margin: 0 3px;
+        line-height: 1.7;
     }
 
     .therapy-details {
-        font-size: 14px;
+        font-size: 18px;
     }
     .list-unstyled .icon-physical:before,
     .list-unstyled .icon-occupational:before,
