@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax::before {
+    content: '';
+    background: url('../../../assets//layout/images/pexels-markus-winkler-4160125.jpg') no-repeat fixed 100%;
+    background-size: cover;
+    color: aliceblue;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.parallax-2{
+    background: url('../../../assets//layout/images/pexels-scott-webb-430208.jpg') repeat fixed 100%;
+    background-size: cover;
+    color: aliceblue;
+}
+.parallax-inner{
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+
+.fnt-size{
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+
+.primary-text-color{
+    color: #417494
+}
+
+
+
+.header-div {
+    background-color: #00307a;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .pos-last{
+    position: relative;
+    top:49px;
+  }
+
+  
+  
+ 

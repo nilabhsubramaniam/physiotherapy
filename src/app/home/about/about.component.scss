@@ -1,0 +1,149 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax::before {
+    content: '';
+    background: url('../../../assets/layout/images/doctor-helping-patient-during-rehabilitation.jpg') no-repeat fixed 100%;
+    background-size: cover;
+    color: aliceblue;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.parallax-2{
+    background: url('../../../assets/layout/images/close-up-woman-physical-rehabilitation-gym.jpg') repeat fixed 100%;
+    background-size: cover;
+    color: aliceblue;
+}
+.parallax-inner{
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+
+/*text on image */
+.Index-page-content {
+    position: relative;
+    padding-top: 27px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+
+.image-text {
+    text-align: right;
+    white-space: pre-wrap;
+    color: #e96928;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.sqs-html-content {
+    word-wrap: break-word;
+}
+
+.therapy-list {
+    text-align: center;
+    white-space: pre-wrap;
+    color: #e96928;
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.therapy-list li {
+    display: inline;
+    margin: 0 30px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.fnt-size{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.therapy-details {
+    text-align: center;
+    white-space: pre-wrap;
+    color: #e96928;
+    font-size: 120px;
+}
+
+.schedule-btn {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .btn {
+        background-color: #013281;
+        border: 1px solid transparent;
+        border-radius: 25px;
+        padding: 1rem 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
+
+.primary-text-color{
+    color: #417494
+}
+
+@media screen and (max-width: 768px) {
+    .image-text {
+        font-size: 20px;
+    }
+
+    .therapy-list li {
+        margin: 0 5px;
+    }
+
+    .therapy-details {
+        font-size: 16px;
+    }
+    .parallax::before {
+        background-position-x: 55%;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .image-text {
+        font-size: 18px;
+    }
+
+    .therapy-list li {
+        margin: 0 3px;
+    }
+
+    .therapy-details {
+        font-size: 14px;
+    }
+
+}

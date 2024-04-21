@@ -1,0 +1,160 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.parallax {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax::before {
+    content: '';
+    background: url('../../assets/layout/images/landing-page-1.png') no-repeat fixed 100%;
+    background-size: cover;
+    color: aliceblue;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+.parallax-1{
+    background: url('../../assets/layout/images/pexels-yan-krukau-5794048.jpg') repeat fixed 100%;
+    background-size: cover;
+    color: aliceblue;
+}
+.parallax-2{
+    background: url('../../assets/layout/images/AdobeStock_550036756.jpeg') repeat fixed 100%;
+    background-size: cover;
+    color: aliceblue;
+}
+.parallax-inner{
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+
+/*text on image */
+.Index-page-content {
+    position: relative;
+    padding-top: 163px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+
+.image-text {
+    text-align: right;
+    white-space: pre-wrap;
+    color: #426076;
+    font-size: 35px;
+}
+
+
+.primary-color{
+    color:#01317e;
+}
+
+.fnt-size {
+    font-size: 14px;
+    text-align: left;
+}
+
+.therapy-details {
+    text-align: center;
+    white-space: pre-wrap;
+    color: #426076;
+    font-size: 18px;
+    padding: 1rem 0;
+}
+
+.schedule-btn {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .btn {
+        background-color: #013281;
+        border: 1px solid transparent;
+        border-radius: 25px;
+        padding: 1rem 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-text {
+        font-size: 20px;
+    }
+
+    .therapy-list li {
+        margin: 0 5px;
+    }
+
+    .fnt-size {
+        font-size: 12px;
+    }
+
+    .therapy-details {
+        font-size: 16px;
+    }
+    .parallax::before {
+        background-position-x: 55%;
+    }
+    .list-unstyled .icon-physical:before,
+    .list-unstyled .icon-occupational:before,
+    .list-unstyled .icon-speech:before {
+        width: 15px; /* Adjust width for smaller screens */
+        height: 15px; /* Adjust height for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .image-text {
+        font-size: 30px;
+    }
+
+    .parallax-inner{
+        padding-top: 60%;
+    }
+
+    .therapy-list li {
+        margin: 0 3px;
+        line-height: 1.7;
+    }
+
+    .therapy-details {
+        font-size: 18px;
+    }
+    .list-unstyled .icon-physical:before,
+    .list-unstyled .icon-occupational:before,
+    .list-unstyled .icon-speech:before {
+        width: 10px; /* Further adjust width for even smaller screens */
+        height: 10px; /* Further adjust height for even smaller screens */
+    }
+}
+
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
